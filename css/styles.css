@@ -11,6 +11,8 @@ a {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 address {
@@ -22,10 +24,23 @@ img {
     max-width: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* general */
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .base-paragraph-style {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin: 0;
 }
 
 .second-level-header {
@@ -46,6 +61,22 @@ img {
     letter-spacing: 0.02em;
 }
 
+/* header */
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigator {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 76px;
+}
+
 .logo {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
@@ -61,12 +92,19 @@ img {
     color: #2E2F42;
 }
 
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-list-link{
+    display: block;
     color: #2E2F42;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-list-link:hover,
@@ -86,10 +124,21 @@ img {
     letter-spacing: 0.02em;
 }
 
+.header-address {
+    margin-left: auto;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-address-link:hover,
 .header-address-link:focus {
     color: #404BBF;
 }
+
+/* order */
 
 .main-order {
     color: #FFF;
@@ -97,11 +146,19 @@ img {
     text-align: center;
 }
 
+.order-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .main-order-header {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .main-order-button {
@@ -112,11 +169,29 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    padding: 16px 32px;
+    border-radius: 4px;
 }
 
 .main-order-button:hover,
 .main-order-button:focus {
     background-color: #404BBF;
+}
+
+/* features */
+
+.main-features-list {
+    display: flex;
+    padding: 120px 0;
+    gap: 24px;
+}
+
+.main-features-list .third-level-header {
+    margin-bottom: 8px;
+}
+
+.features-list-item {
+    min-width: 264px;
 }
 
 .main-team {
