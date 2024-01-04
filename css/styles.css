@@ -1,0 +1,137 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFF;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.base-paragraph-style {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.second-level-header {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.020em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.third-level-header {
+    color: #2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    color: #4D5AE5;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.logo-color-black {
+    color: #2E2F42;
+}
+
+.header-list-link{
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-list-link:hover,
+.header-list-link:focus
+{
+    color: #404BBF;
+}
+
+.header-list-link:active {
+    color: #404BBF;
+    text-decoration: underline;
+}
+
+.header-address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+    color: #404BBF;
+}
+
+.main-order {
+    color: #FFF;
+    background-color: #2E2F42;
+    text-align: center;
+}
+
+.main-order-header {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+.main-order-button {
+    cursor: pointer;
+    background-color: #4D5AE5;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.main-order-button:hover,
+.main-order-button:focus {
+    background-color: #404BBF;
+}
+
+.main-team {
+    background-color: #F4F4FD;
+}
+
+.main-team-element {
+    background-color: #FFFFFF;
+}
+
+.footer {
+    background-color: #2E2F42;
+    color: #F4F4FD;
+}
+
+.logo-color-white {
+    color: #F4F4FD;
+}
