@@ -102,8 +102,8 @@
       </section>
       <section class="main-team">
         <div class="container">
-          <h2 class="second-level-header">Our Team</h2>
-          <ul>
+          <h2 class="second-level-header main-team-header">Our Team</h2>
+          <ul class="main-team-list">
             <li class="main-team-element">
               <img
                 src="./images/team-1.jpg"
@@ -111,8 +111,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-level-header">Mark Guerrero</h3>
-              <p class="base-paragraph-style">Product Designer</p>
+              <div class="member-info">
+                <h3 class="third-level-header">Mark Guerrero</h3>
+                <p class="base-paragraph-style">Product Designer</p>
+              </div>
             </li>
             <li class="main-team-element">
               <img
@@ -121,8 +123,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-level-header">Tom Ford</h3>
-              <p class="base-paragraph-style">Frontend Developer</p>
+              <div class="member-info">
+                <h3 class="third-level-header">Tom Ford</h3>
+                <p class="base-paragraph-style">Frontend Developer</p>
+              </div>
             </li>
             <li class="main-team-element">
               <img
@@ -131,8 +135,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-level-header">Camila Garcia</h3>
-              <p class="base-paragraph-style">Marketing</p>
+              <div class="member-info">
+                <h3 class="third-level-header">Camila Garcia</h3>
+                <p class="base-paragraph-style">Marketing</p>
+              </div>
             </li>
             <li class="main-team-element">
               <img
@@ -141,75 +147,91 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-level-header">Daniel Wilson</h3>
-              <p class="base-paragraph-style">UI Designer</p>
+              <div class="member-info">
+                <h3 class="third-level-header">Daniel Wilson</h3>
+                <p class="base-paragraph-style">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
       <section class="main-portfolio">
         <div class="container">
-          <h2 class="second-level-header">Our Portfolio</h2>
+          <h2 class="second-level-header main-portfolio-header">
+            Our Portfolio
+          </h2>
           <ul class="main-portfolio-list">
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-1.jpg"
                 width="360"
                 height="300"
                 alt="Banking app design"
               />
-              <h3 class="third-level-header">Banking App</h3>
-              <p class="base-paragraph-style">App</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Banking App</h3>
+                <p class="base-paragraph-style">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-2.jpg"
                 width="360"
                 height="300"
                 alt="Payment process"
               />
-              <h3 class="third-level-header">Cashless Payment</h3>
-              <p class="base-paragraph-style">Marketing</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Cashless Payment</h3>
+                <p class="base-paragraph-style">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-3.jpg"
                 width="360"
                 height="300"
                 alt="Laptop"
               />
-              <h3 class="third-level-header">Meditation App</h3>
-              <p class="base-paragraph-style">App</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Meditation App</h3>
+                <p class="base-paragraph-style">App</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-4.jpg"
                 width="360"
                 height="300"
                 alt="Sport car"
               />
-              <h3 class="third-level-header">Taxi Service</h3>
-              <p class="base-paragraph-style">Marketing</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Taxi Service</h3>
+                <p class="base-paragraph-style">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-5.jpg"
                 width="360"
                 height="300"
                 alt="Screen Illustrations app design"
               />
-              <h3 class="third-level-header">Screen Illustrations</h3>
-              <p class="base-paragraph-style">Design</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Screen Illustrations</h3>
+                <p class="base-paragraph-style">Design</p>
+              </div>
             </li>
-            <li>
+            <li class="portfolio-list-item">
               <img
                 src="./images/portfolio-6.jpg"
                 width="360"
                 height="300"
                 alt="A lady is engaging in a conversation through a video chat"
               />
-              <h3 class="third-level-header">Online Courses</h3>
-              <p class="base-paragraph-style">Marketing</p>
+              <div class="portfolio-info">
+                <h3 class="third-level-header">Online Courses</h3>
+                <p class="base-paragraph-style">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -217,13 +239,15 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="footer-logo logo" href="./index.html">
-          Web<span class="logo-color-white">Studio</span>
-        </a>
-        <p class="base-paragraph-style">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <div class="footer-elements">
+          <a class="footer-logo logo" href="./index.html">
+            Web<span class="logo-color-white">Studio</span>
+          </a>
+          <p class="base-paragraph-style">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
