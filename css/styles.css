@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-navigator {
@@ -144,9 +145,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFF;
     background-color: #2E2F42;
     text-align: center;
-}
-
-.order-container {
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -162,6 +160,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-order-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     cursor: pointer;
     background-color: #4D5AE5;
     color: inherit;
