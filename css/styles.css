@@ -30,6 +30,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* general */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container {
     width: 1158px;
     padding: 0 15px;
@@ -63,10 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* header */
 
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-navigator {
@@ -183,9 +200,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* features */
 
+.main-features {
+    padding: 120px 0;
+}
+
 .main-features-list {
     display: flex;
-    padding: 120px 0;
     gap: 24px;
 }
 
