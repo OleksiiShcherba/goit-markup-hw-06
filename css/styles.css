@@ -92,10 +92,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo {
-    margin-right: 76px;
-}
-
-.logo {
     color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -104,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo-color-black {
@@ -300,6 +297,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo {
+    color: #4D5AE5;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     display: inline-block;
     margin-bottom: 16px;
 }
