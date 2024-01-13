@@ -157,10 +157,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-order {
     color: #FFF;
-    background-color: #2E2F42;
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #2E2F42;
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .main-order-header {
@@ -198,6 +203,8 @@ h1, h2, h3, h4, h5, h6 {
 /* features */
 
 .main-features {
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 120px 0;
 }
 
@@ -217,6 +224,8 @@ h1, h2, h3, h4, h5, h6 {
 /* team */
 
 .main-team {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #F4F4FD;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -282,6 +291,8 @@ h1, h2, h3, h4, h5, h6 {
 /* footer */
 
 .footer {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2E2F42;
     color: #F4F4FD;
     padding: 100px 0;
