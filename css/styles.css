@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.02em;
 }
 
+.icon {
+    fill: transparent;
+}
+
 /* header */
 
 .header {
@@ -227,17 +231,13 @@ h1, h2, h3, h4, h5, h6 {
     gap: 24px;
 }
 
-.features-list-item .features-list-item-decoration {
+.features-list-item-decoration {
     display: flex;
     padding: 23px 0;
     border-radius: 4px;
     border: 1px solid #8E8F99;
     background-color: #F4F4FD;
     justify-content: center;
-}
-
-.features-list-item-decoration svg {
-    align-items: center;
 }
 
 .main-features-list .third-level-header {
