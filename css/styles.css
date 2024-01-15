@@ -274,12 +274,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .member-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 8px;
     padding: 32px 0;
     text-align: center;
+    max-width: 232px;
 }
 
-.member-info > .third-level-header{
-    margin-bottom: 8px;
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.social-links-item {
+    background-color: #4D5AE5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.social-links-item svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    transform: translate(-50%, -50%);
 }
 
 /* portfolio */
