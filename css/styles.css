@@ -395,14 +395,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 100px 0;
 }
 
-.footer-сontainer {
+.footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.footer-logo-data {
+    margin-right: 120px;
 }
 
 .footer-social-link-data .base-paragraph-style {
     font-weight: 500;
     margin-bottom: 16px;
+    color: #FFFFFF;
 }
 
 .footer-social-link-data .social-links {
