@@ -452,10 +452,44 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    padding: 24px;
 
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
+}
+
+.cross-icon {
+    fill: #2E2F42;
+}
+
+.close-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-bottom: 24px;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.modal-title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.modal-input-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
