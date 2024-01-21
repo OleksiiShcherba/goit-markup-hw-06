@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 120px;
 }
 
-.footer-social-link-data .base-paragraph-style {
+.footer-header-style {
     font-weight: 500;
     margin-bottom: 16px;
     color: #FFFFFF;
@@ -435,6 +435,58 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-color-white {
     color: #F4F4FD;
+}
+
+.footer-social-link-data {
+    margin-right: 80px;
+}
+
+.footer-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-input {
+    color: #FFF;
+    width: 264px;
+    height: 40px;
+    margin-right: 24px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.footer-input::placeholder {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.footer-button {
+    width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    cursor: pointer;
+
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    user-select: none;
 }
 
 /* modal */
@@ -668,6 +720,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transform: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
 
 .modal-button:active {
