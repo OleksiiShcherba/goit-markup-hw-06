@@ -454,6 +454,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-input {
     color: #FFF;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     width: 264px;
     height: 40px;
     border-radius: 4px;
@@ -465,13 +468,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-input::placeholder {
     color: #FFF;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
 }
 
 .footer-button {
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     border: none;
     border-radius: 4px;
@@ -482,7 +482,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
 
     color: #FFF;
     text-align: center;
@@ -493,6 +492,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon-paper-plane{
+    margin-left: 16px;
     fill: white;
 }
 
