@@ -511,7 +511,6 @@ h1, h2, h3, h4, h5, h6 {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .modal-input-block {
@@ -519,6 +518,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 8px;
 }
 
 .modal-input-label {
@@ -604,12 +604,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     display: flex;
-}
-
-.checkbox {
-    width: 16px;
-    height: 16px;
-    margin: 0;
+    user-select: none;
 }
 
 .modal-policy-label {
@@ -619,7 +614,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #8E8F99;
 }
 
-.modal-policy-label span {
+.checkbox-icon-cover {
     display: inline-flex;
     width: 16px;
     height: 16px;
@@ -628,6 +623,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 8px;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.modal-policy-label .checkbox-icon-cover {
+    background-color: #404BBF;
+}
+
+.icon-check {
+    fill: transparent;
+}
+
+.checkbox:checked+.modal-policy-label .icon-check {
+    fill: #F4F4FD;
 }
 
 .policy-link {
