@@ -45,16 +45,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    /* width: 1158px; */
+    width: 288px;
     margin: 0 auto;
 }
 
 .base-paragraph-style {
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    /* max-width: 264px; */
     margin: 0;
 }
 
@@ -70,9 +71,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .third-level-header {
     color: #2E2F42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    /* font-size: 20px; */
+    font-size: 36px;
+    /* font-weight: 500; */
+    font-weight: 700;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
@@ -225,18 +228,36 @@ h1, h2, h3, h4, h5, h6 {
 /* features */
 
 .main-features {
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 320px;
     margin: 0 auto;
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
 }
 
 .main-features-list {
     display: flex;
-    gap: 24px;
+    /* gap: 24px; */
+    flex-direction: column;
+    gap: 72px;
+}
+
+.hide-icon {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .features-list-item {
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
     flex-direction: column;
     align-items: flex-start;
 }
@@ -255,16 +276,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .features-list-item .third-level-header {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 /* team */
 
 .main-team {
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 320px;
     margin: 0 auto;
     background-color: #F4F4FD;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding: 96px 0;
 }
 
 .main-team-header {
@@ -273,12 +297,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-team-list {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 24px; */
+    gap: 72px;
 }
 
 .main-team-element {
     background-color: #FFFFFF;
-    flex-basis: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
+    max-width: 264px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -316,11 +344,24 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #404BBF;
 }
 
+.member-info > .third-level-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.member-info > .base-paragraph-style {
+    font-weight: 400;
+}
+
 /* portfolio */
 
 .main-portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .main-portfolio-header {
@@ -330,13 +371,15 @@ h1, h2, h3, h4, h5, h6 {
 .main-portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    align-items: center;
+    /* gap: 24px; */
     row-gap: 48px;
 }
 
 .portfolio-list-item {
-    flex-basis: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* flex-basis: calc((100% - 48px) / 3); */
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .portfolio-top-info {
@@ -366,12 +409,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .portfolio-list-item:hover,
 .portfolio-list-item:focus {
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    /* box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08); */
 }
 
 .portfolio-list-item:hover .portfolio-overlay,
 .portfolio-list-item:focus .portfolio-overlay {
-    transform: translateY(0%);
+    /* transform: translateY(0%); */
 }
 
 .portfolio-info {
@@ -381,8 +424,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
-.portfolio-info >.third-level-header {
+.portfolio-info > .third-level-header {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
     margin-bottom: 8px;
+}
+
+.portfolio-info > .base-paragraph-style {
+    font-weight: 400;
 }
 
 /* footer */
