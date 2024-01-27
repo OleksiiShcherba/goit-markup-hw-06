@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 .header-navigator {
     display: flex;
     align-items: center;
+    padding: 17.5px 0;
 }
 
 .header-logo {
@@ -105,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-right: 76px;
+    margin-right: 120px;
 }
 
 .logo-color-black {
@@ -113,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-list {
-    display: flex;
+    display: none;
     gap: 40px;
     justify-content: center;
 }
@@ -151,20 +152,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #404BBF;
 }
 
+.header-button {
+    padding: 0;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
 .header-address-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address {
     margin-left: auto;
+    display: none;
 }
 
 .header-address-list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .header-address-link:hover,
@@ -741,6 +751,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 768px) {
+    /* header */
+
+    .header-list {
+        display: flex;
+    }
+
+    .header-navigator {
+        padding: 0;
+    }
+
+    .header-button {
+        display: none;
+    }
+
+    .header-address{ 
+        display: flex;
+    }
+
     /* features */
 
     .container {
@@ -793,6 +821,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (min-width: 1158px) {
+    /* header */
+
+    .header-logo {
+        margin-right: 76px;
+    }
+
+    .header-address-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .header-address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
     /* features */
 
     .third-level-header {
