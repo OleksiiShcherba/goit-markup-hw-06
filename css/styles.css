@@ -187,15 +187,11 @@ h1, h2, h3, h4, h5, h6 {
 .main-order {
     color: #FFF;
     text-align: center;
-    /* padding-top: 188px;
-    padding-bottom: 188px; */
-    /* max-width: 1440px; */
     padding-top: 72px;
     padding-bottom: 72px;
     max-width: 320px;
     margin: 0 auto;
     background-color: #2E2F42;
-    /* background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
     background-position: center;
     background-size: cover;
@@ -203,20 +199,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-order-header {
-    /* font-size: 56px; */
     font-size: 36px;
     font-weight: 700;
-    /* line-height: 1.07; */
     line-height: 1.11;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    /* margin-bottom: 48px; */
     margin-bottom: 72px;
-    /* max-width: 496px; */
     max-width: 200px;
     text-align: center;
     text-transform: capitalize;
 }
+
 
 .main-order-button {
     display: block;
@@ -418,23 +411,30 @@ h1, h2, h3, h4, h5, h6 {
 /* footer */
 
 .footer {
-    max-width: 1440px;
+    max-width: 320px;
     margin: 0 auto;
     background-color: #2E2F42;
     color: #F4F4FD;
-    padding: 100px 0;
+    padding: 96px 0;
 }
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-logo-data {
-    margin-right: 120px;
+    margin-bottom: 72px;
+}
+
+.footer-logo-data .base-paragraph-style {
+    font-weight: 400;
 }
 
 .footer-header-style {
+    text-align: center;
     margin-bottom: 16px;
     color: #FFFFFF;
     font-size: 16px;
@@ -457,8 +457,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 17.5px;
 }
 
 .footer-social-link-data .social-link:hover,
@@ -471,11 +472,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-social-link-data {
-    margin-right: 80px;
+    margin-bottom: 72px;
 }
 
 .footer-form{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     user-select: none;
@@ -785,11 +787,23 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
+    /* order */
     .main-order {
+        padding-top: 112px;
+        padding-bottom: 112px;
+        max-width: 768px;
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet.jpg);
     }
 
-    /* order */
+    .main-order-header {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        margin-bottom: 36px;
+        max-width: 496px;
+        text-transform: none;
+    }
+    
     @media (min-resolution: 192dpi) {
         .main-order {
             background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tablet-2x.jpg);
@@ -845,6 +859,38 @@ h1, h2, h3, h4, h5, h6 {
         flex-basis: calc((100% - 24px) / 2);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     }
+
+    /* footer */
+
+    .footer {
+        max-width: 768px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding-left: 108px;
+        margin: 0;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .footer-logo-data .base-paragraph-style {
+        max-width: 264px;
+    }
+
+    .footer-header-style {
+        text-align: start;
+    }
+
+    .footer-logo {
+        display: inline-block;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -863,6 +909,20 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+    }
+
+    /* order */
+    .main-order {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    }
+
+    @media (min-resolution: 192dpi) {
+        .main-order {
+            background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);
+        }
     }
 
     /* features */
@@ -939,5 +999,26 @@ h1, h2, h3, h4, h5, h6 {
     .portfolio-list-item:hover .portfolio-overlay,
     .portfolio-list-item:focus .portfolio-overlay {
         transform: translateY(0%);
+    }
+
+    /* footer */
+    .footer {
+        max-width: 1440px;
+        padding: 100px 0;
+    }
+
+    .footer-container {
+        margin: 0 auto;
+        gap: 0;
+    }
+
+    .footer-logo-data {
+        margin: 0;
+        margin-right: 120px;
+    }
+
+    .footer-social-link-data {
+        margin: 0;
+        margin-right: 80px;
     }
 }
