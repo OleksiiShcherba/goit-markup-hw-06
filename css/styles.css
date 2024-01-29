@@ -558,7 +558,7 @@ h1, h2, h3, h4, h5, h6 {
 
     padding: 72px 24px 24px 24px;
     margin: 0;
-    width: 408px;
+    width: 288px;
     min-height: 584px;
     border-radius: 4px;
     background-color: #FCFCFC;
@@ -605,6 +605,7 @@ h1, h2, h3, h4, h5, h6 {
 .modal-title {
     text-align: center;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 0;
@@ -712,10 +713,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    display: flex;
+    align-items: center;
 }
 
 .checkbox-icon-cover {
     display: inline-flex;
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
@@ -890,6 +894,12 @@ h1, h2, h3, h4, h5, h6 {
 
     .footer-form {
         flex-direction: row;
+    }
+
+    /* modal */
+
+    .modal {
+        width: 408px;
     }
 }
 
